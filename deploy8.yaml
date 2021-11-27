@@ -42,7 +42,7 @@ Resources:
     Properties:
       ImageId: ami-09e67e426f25ce0d7
       InstanceType: t2.micro
-      KeyName: "saikey"
+      KeyName: "EC2Virginia"
       SecurityGroupIds:
         - !Ref Ec2OneSG
       Tags:
@@ -53,7 +53,7 @@ Resources:
     Properties:
       ImageId: ami-09e67e426f25ce0d7
       InstanceType: t2.micro
-      KeyName: "saikey"
+      KeyName: "EC2Virginia"
       SecurityGroupIds:
         - !Ref Ec2TwoSG
       Tags:
@@ -64,7 +64,7 @@ Resources:
     Properties:
       ImageId: ami-09e67e426f25ce0d7
       InstanceType: t2.micro
-      KeyName: "saikey"
+      KeyName: "EC2Virginia"
       SecurityGroupIds:
         - !Ref Ec2ThreeSG
       Tags:

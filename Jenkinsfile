@@ -9,7 +9,7 @@
                 npm install
                 npm run build
                 sudo npm install -g serve
-                serve -s build
+                serve -s build &
                 '''
                 sh 'echo "completed build"'
             }

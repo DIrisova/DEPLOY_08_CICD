@@ -1,4 +1,4 @@
- pipeline {
+pipeline {
     agent {
         label "AgentEc2Two"
     }
@@ -14,6 +14,19 @@
                 sh 'echo "completed build"'
             }
         }
-        
+        stage('Test'){
+            steps{
+                sh '''
+                echo "completed build"
+                '''
+            }
+        }
+        stage('Deployment'){
+            steps{
+                sh '''
+                echo "completed Deploy Step"
+                '''
+            }
+        }
+        }
     }
-}
